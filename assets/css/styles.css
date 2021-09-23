@@ -59,7 +59,7 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 3rem;
+    --big-font-size: 2.25rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -144,6 +144,12 @@ section {
   padding: 2rem 0 4rem;
 }
 
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
 .section-title {
   font-size: var(--h1-font-size);
 }
@@ -165,6 +171,15 @@ section {
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+}
+
+.thanks-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
@@ -357,6 +372,7 @@ section {
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -510,6 +526,7 @@ section {
 .skills-mysql { width: 60%; }
 .skills-firebase { width: 55%; }
 .skills-figma { width: 55%; }
+.skills-english { width: 90%; }
 
 .skills-close .skills-list {
   height: 0;

@@ -44,11 +44,11 @@
               <i class="fas fa-clipboard-list nav-icon"></i>Skills
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#services" class="nav-link">
               <i class="fas fa-briefcase nav-icon"></i>Services
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#portfolio" class="nav-link">
               <i class="fas fa-images nav-icon"></i>Portfolio
@@ -56,7 +56,7 @@
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">
-              <i class="fas fa-envelope nav-icon"></i>Contact Me
+              <i class="fas fa-envelope nav-icon"></i>Contact
             </a>
           </li>
         </ul>
@@ -81,8 +81,7 @@
         <div class="home-content grid">
           <div class="home-social">
             <a href="#" target="_blank" class="home-social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank" class="home-social-icon"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="home-social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Hieu087" target="_blank" class="home-social-icon"><i class="fab fa-github"></i></a>
           </div>
           <div class="home-img">
             <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -111,7 +110,7 @@
               It would be a pleasure for me to work in a professional 
               environment and contribute to the common interests of the company.
             </p>
-            <a href="#contact" class="button button-flex">
+            <a href="thanks.html" class="button button-flex">
               Contact Me <i class="fas fa-angle-double-right button-icon"></i>
             </a>
           </div>
@@ -159,7 +158,7 @@
             </div>
              
             <div class="about-buttons">
-              <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button-flex">
+              <a download="" href="assets/pdf/Hieu-CV.pdf" class="button button-flex">
                 Download CV<i class="fas fa-download button-icon"></i>
               </a>
             </div>
@@ -180,7 +179,7 @@
               <i class="fas fa-code skills-icon"></i>
               <div>
                 <h1 class="skills-title">Frontend</h1>
-                <span class="skills-subtitle">More than 1 year</span>
+                <span class="skills-subtitle">More than 3 year</span>
               </div>
               <i class="fas fa-chevron-down skills-arrow"></i>
             </div>
@@ -218,7 +217,7 @@
 
               <div class="skills-data">
                 <div class="skills-box">
-                  <h3 class="skills-name">React</h3>
+                  <h3 class="skills-name">React Native</h3>
                   <span class="skills-number">85%</span>
                 </div>
                 <div class="skills-bar">
@@ -297,6 +296,31 @@
               </div>
             </div>
           </div>
+
+          <!--==================== SKILLS 4 ====================-->
+          <div class="skills-content skills-close"  onclick="toggleSkills(this);">
+            <div class="skills-header">
+              <i class="fas fa-language skills-icon"></i>
+              <div>
+                <h1 class="skills-title">Language</h1>
+                <span class="skills-subtitle">Understanding and reading</span>
+              </div>
+              <i class="fas fa-chevron-down skills-arrow"></i>
+            </div>
+
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-box">
+                  <h3 class="skills-name">English</h3>
+                  <span class="skills-number">90%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-english"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -328,7 +352,7 @@
                 <span class="qualification-subtitle">Ton Duc Thang University</span>
                 <div class="qualification-calendar">
                   <i class="fas fa-calendar"></i>
-                  2017 - 2021
+                  2017 - 
                 </div>
               </div>
 
@@ -361,46 +385,12 @@
     </section>
 
     <!--==================== SERVICES ====================-->
-    <section class="services section" id="services">
+    <!-- <section class="services section" id="services">
       <h2 class="section-title">Services</h2>
       <span class="section-subtitle">What I offer</span>
 
       <div class="services-container container grid">
-        <!--==================== SERVICES 1 ====================-->
-        <div class="services-content">
-          <div>
-            <i class="far fa-square services-icon"></i>
-            <h3 class="services-title">UX/UI <br> Designer</h3>
-          </div>
-
-          <span class="button button-flex button-small button-link services-button">
-            View more
-            <i class="fas fa-arrow-right button-icon"></i>
-          </span>
-
-          <div class="services-modal">
-            <div class="services-modal-content">
-              <h4 class="services-modal-title">UX/UI <br> Designer</h4>
-              <i class="fas fa-times services-modal-close"></i>
-              <ul class="services-modal-services grid">
-                <li class="services-modal-service">
-                  <i class="far fa-check-circle services-modal-icon"></i>
-                  <p>I develop user interface</p>
-                </li>
-                <li class="services-modal-service">
-                  <i class="far fa-check-circle services-modal-icon"></i>
-                  <p>I develop user interface</p>
-                </li>
-                <li class="services-modal-service">
-                  <i class="far fa-check-circle services-modal-icon"></i>
-                  <p>I develop user interface</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <!--==================== SERVICES 2 ====================-->
+        ==================== SERVICES 1 ====================
         <div class="services-content">
           <div>
             <i class="fas fa-code services-icon"></i>
@@ -434,9 +424,43 @@
           </div>
 
         </div>
+        ==================== SERVICES 2 ====================
+        <div class="services-content">
+          <div>
+            <i class="far fa-square services-icon"></i>
+            <h3 class="services-title">UX/UI <br> Designer</h3>
+          </div>
+
+          <span class="button button-flex button-small button-link services-button">
+            View more
+            <i class="fas fa-arrow-right button-icon"></i>
+          </span>
+
+          <div class="services-modal">
+            <div class="services-modal-content">
+              <h4 class="services-modal-title">UX/UI <br> Designer</h4>
+              <i class="fas fa-times services-modal-close"></i>
+              <ul class="services-modal-services grid">
+                <li class="services-modal-service">
+                  <i class="far fa-check-circle services-modal-icon"></i>
+                  <p>I develop user interface</p>
+                </li>
+                <li class="services-modal-service">
+                  <i class="far fa-check-circle services-modal-icon"></i>
+                  <p>I develop user interface</p>
+                </li>
+                <li class="services-modal-service">
+                  <i class="far fa-check-circle services-modal-icon"></i>
+                  <p>I develop user interface</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
       </div>
 
-    </section>
+    </section> -->
 
     <!--==================== PORTFOLIO ====================-->
     <section class="portfolio section" id="portfolio">
@@ -447,11 +471,14 @@
         <div class="swiper-wrapper">
           <!--==================== PORTFOLIO 1 ====================-->
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio-img">
+            <img src="assets/img/portfolio1.png" alt="" class="portfolio-img">
             <div class="portfolio-data">
-              <h3 class="portfolio-title">Modern Website</h3>
-              <p class="portfolio-description">Website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="#" class="button button-flex button-small portfolio-button">
+              <h3 class="portfolio-title">Google Play store</h3>
+              <p class="portfolio-description">
+                A project for my final term test, get ideas from Google Play store with similar functions from the real page <br>
+                User name: admin | Pass: 123456 
+              </p>
+              <a href="http://google-play-project.epizy.com/" target="_blank" class="button button-flex button-small portfolio-button">
                 Demo
                 <i class="fas fa-arrow-right button-icon"></i>
               </a>
@@ -460,12 +487,15 @@
 
           <!--==================== PORTFOLIO 2 ====================-->
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio-img">
+            <img src="assets/img/portfolio2.png" alt="" class="portfolio-img">
             <div class="portfolio-data">
-              <h3 class="portfolio-title">Modern Website</h3>
-              <p class="portfolio-description">Website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="#" class="button button-flex button-small portfolio-button">
-                Demo
+              <h3 class="portfolio-title">Gas South</h3>
+              <p class="portfolio-description">
+                This application was made in order to create a service that searches for 
+                the origin of Gas South brand's gas cylinders.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.gasgrabgassouth" target="_blank" class="button button-flex button-small portfolio-button">
+                View in store
                 <i class="fas fa-arrow-right button-icon"></i>
               </a>
             </div>
@@ -473,12 +503,15 @@
 
           <!--==================== PORTFOLIO 3 ====================-->
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio-img">
+            <img src="assets/img/portfolio3.png" alt="" class="portfolio-img">
             <div class="portfolio-data">
-              <h3 class="portfolio-title">Modern Website</h3>
-              <p class="portfolio-description">Website adaptable to all devices, with ui components and animated interactions.</p>
-              <a href="#" class="button button-flex button-small portfolio-button">
-                Demo
+              <h3 class="portfolio-title">Gas Grab</h3>
+              <p class="portfolio-description">
+                A gas delivery service application.
+                Making the guide map for delivery man and customers using with Google map API was one of my biggest tasks.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.gasgrab" target="_blank" class="button button-flex button-small portfolio-button">
+                View in store
                 <i class="fas fa-arrow-right button-icon"></i>
               </a>
             </div>
@@ -500,7 +533,7 @@
       <div class="project-bg">
         <div class="project-container container grid">
           <div class="project-data">
-            <h2 class="project-title">You have a new project</h2>
+            <h2 class="project-title">Need a dedicated employee?</h2>
             <p class="project-description">Contact me now</p>
             <a href="#contact" class="button button-flex button-white">
               Contact me
@@ -545,30 +578,31 @@
           </div>
         </div>
 
-        <form action="" class="contact-form grid">
-          <div class="contact-inputs grid">
-            <div class="contact-content">
-              <label for="" class="contact-label">Name</label>
-              <input type="text" class="contact-input">
-            </div>
+        <form action="https://formsubmit.co/tthieu08079@gmail.com" method="POST" class="contact-form grid">
+          <!-- <div class="contact-inputs grid">
             <div class="contact-content">
               <label for="" class="contact-label">Email</label>
-              <input type="email" class="contact-input">
+              <input type="email" class="contact-input" required>
             </div>
-          </div>
+          </div> -->
+          <!-- <div class="contact-content">
+            <label for="" class="contact-label">Title</label>
+            <input type="text" class="contact-input" required>
+          </div> -->
+          <input type="hidden" name="_subject" value="Email from porfolio!">
           <div class="contact-content">
-            <label for="" class="contact-label">Project</label>
-            <input type="text" class="contact-input">
+            <label for="" class="contact-label">Email</label>
+            <input type="email" name="email" class="contact-input" required>
           </div>
           <div class="contact-content">
             <label for="" class="contact-label">Message</label>
-            <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+            <textarea name="message" id="" cols="0" rows="7" class="contact-input" required></textarea>
           </div>
 
           <div>
-            <a href="#" class="button button-flex">
+            <button type="submit" class="button button-flex">
               Send Message
-            </a>
+            </button>
           </div>
         </form>
       </div>
@@ -587,7 +621,7 @@
 
         <ul class="footer-links">
           <li>
-            <a href="#services" class="footer-link">Services</a>
+            <a href="#skills" class="footer-link">Skills</a>
           </li>
           <li>
             <a href="#portfolio" class="footer-link">Portfolio</a>
@@ -600,9 +634,6 @@
         <div class="footer-socials">
           <a href="#" target="_blank" class="footer-social">
             <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" target="_blank" class="footer-social">
-            <i class="fab fa-github"></i>
           </a>
           <a href="#" target="_blank" class="footer-social">
             <i class="fab fa-github"></i>
