@@ -525,8 +525,11 @@ button {
 .skills-php { width: 70%; }
 .skills-mysql { width: 60%; }
 .skills-firebase { width: 55%; }
-.skills-figma { width: 55%; }
+.skills-figma { width: 65%; }
 .skills-english { width: 90%; }
+.skills-ps { width: 85%; }
+.skills-communication { width: 80%; }
+.skills-ct { width: 60%; }
 
 .skills-close .skills-list {
   height: 0;
@@ -883,6 +886,79 @@ button {
   color: #fff;
 }
 
+/*==================== PROJECT DETAIL ====================*/
+.project-number {
+  margin-top: var(--mb-3);
+  margin-bottom: var(--mb-1-5);
+}
+
+.project-preamble {
+  margin-bottom: var(--mb-1);
+}
+
+.project-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-data {
+  display: flex;
+  justify-content: center;
+}
+
+.project-detail-img {
+  width: 175px;
+  height: 325px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-detail-full-img {
+  border-radius: 10px;
+}
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.project-modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-modal-close {
+  font-size: 3rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.project-modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.project-detail-description {
+  padding: 0 1rem;
+  color: var(--text-color);
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
@@ -990,12 +1066,12 @@ button {
     justify-content: center;
   }
 
-  .about-container,
   .skills-container,
   .portfolio-content,
   .project-container,
   .contact-container,
-  .footer-container {
+  .footer-container,
+  .gasgrab-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1088,16 +1164,8 @@ button {
     width: 350px;
   }
 
-  .about-description {
-    text-align: initial;
-  }
-
   .about-info {
     justify-content: space-between;
-  }
-
-  .about-buttons {
-    justify-content: initial;
   }
 
   .qualification-tabs {
@@ -1151,10 +1219,6 @@ button {
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
-  }
-
-  .project-data {
-    padding-top: .8rem;
   }
 
   .footer-container {

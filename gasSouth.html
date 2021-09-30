@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--==================== ICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!--==================== JQUERY ====================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Gas South</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Hieu</a>
+
+      <div class="nav-btns">
+        <!-- Theme change button -->
+        <i class="far fa-moon change-theme" id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Gas South</h2>
+    <span class="section-subtitle">Details of my works</span>
+
+    <div class="gasgrab-container container">
+      <p class="project-preamble">
+        Gas South app require a scanner for serial numbers with minimum response time so advanced technology are necessary.
+        I single-handedly took the responsibility for this app. 
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=com.gasgrabgassouth" target="_blank" class="button button-flex button-small portfolio-button">
+        View in store
+        <i class="fas fa-arrow-right button-icon"></i>
+      </a>
+
+      <!-- =========================== 1 =========================== -->
+      <h1 class="project-number">1. Login Function</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gassouth1.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gassouth1.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          Login with 3 methods (4 for Iphone users): <br>
+          - Login with Facebook: Using react-native-fbsdk module. Since 
+          Facebook has ended official support for React Native so this module is no longer usable.<br>
+          - Login with Google: Using Google signin provider from Firebase. <br>
+          - Login with Phone: Login with OTP confirmation by using provider from Google Firebase. <br>
+          - Login with Apple ID (for Iphone user): Using react-native-apple-authentication module.
+        </span>
+      </div>
+
+      <!-- =========================== 2 =========================== -->
+      <h1 class="project-number">2. Serial Number Scanner</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gassouth2.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gassouth2.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          - Each gas cylinder will have their unique serial number, these serial numbers can
+          be used to check for the origin of gas cylinders or create a record. <br>
+          - To create a serial number scanner, I used react-native-camera module and
+          Google Vision API to accomplish. <br>
+          - After users have scanned a valid serial number, the system will navigate
+          them to a new screen with the cylinder's info being displayed.
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="fas fa-arrow-up scrollup-icon"></i>
+  </a>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

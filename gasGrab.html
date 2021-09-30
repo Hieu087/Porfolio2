@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--==================== ICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!--==================== JQUERY ====================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Gas Grab</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Hieu</a>
+
+      <div class="nav-btns">
+        <!-- Theme change button -->
+        <i class="far fa-moon change-theme" id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Gas Grab</h2>
+    <span class="section-subtitle">Details of my works</span>
+
+    <div class="gasgrab-container container">
+      <p class="project-preamble">
+        Gas Grab is a gas order service app. Making the tracking
+        order map is one of my main tasks in this project, but thanks
+        to the help of Google API, everything was executed smoothly.
+      </p>
+
+      <a href="https://play.google.com/store/apps/details?id=com.gasgrab" target="_blank" class="button button-flex button-small portfolio-button">
+        View in store
+        <i class="fas fa-arrow-right button-icon"></i>
+      </a>
+
+      <!-- =========================== 1 =========================== -->
+      <h1 class="project-number">1. Login Function</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gasgrab1.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gasgrab1.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          - Create login function with OTP confirmation by
+          using provider from Google Firebase. <br>
+          - Create an OTP confirmation screen in order to 
+          ensure users are providing a valid phone number.
+        </span>
+      </div>
+
+      <!-- =========================== 2 =========================== -->
+      <h1 class="project-number">2. Order Function</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gasgrab2.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gasgrab2.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          Create gas order function, this will come with 4 screens: <br>
+          - Confirm your cart: Users can have multiple items in their cart, the price will be calculated base on each item and its quantity. <br>
+          - Confirm your address and time of delivery: If users didn't enter their address before, the system would force them to enter it in order to continue.  <br>
+          - Final confirmation and note for delivery associates: Customers's note will display on delivery associates's application. <br>
+          - Order complete: Just a screen says thank you for your support.
+        </span>
+      </div>
+
+      <!-- =========================== 3 =========================== -->
+      <h1 class="project-number">3. Addresses Picker</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gasgrab3.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gasgrab3.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          There are 2 options for users: <br>
+          - Choose address by entering and picking a suitable 
+          address from the addresses list, the system will suggest a 
+          list of addresses that suit the words users enter. 
+          This has been done with Google autocomplete API. <br>
+          - Allow the app to get their location and use their current location as the address.
+          This has been done with react-native-geocoding module.
+        </span>
+      </div>
+
+      <!-- =========================== 4 =========================== -->
+      <h1 class="project-number">4. Order Tracking</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gasgrab4.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gasgrab4.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          - Users are able to track their order. <br>
+          - Users will get a notification as soon as the delivery starts. 
+          By clicking on the notification, users will be navigated to 
+          a screen which displays a map with their address's location, delivery associates's location and info,
+          there also a colored path between their locations. <br>
+          - Delivery associates's location will be updated continuously to 
+          the server through API from their app, then users's 
+          app will also receive that location from the server through API continuously. <br>
+          - Google map and map direction API were used to accomplish. <br>
+          * This function has been broken since I left that why the map isn't showing.
+        </span>
+      </div>
+
+      <!-- =========================== 5 =========================== -->
+      <h1 class="project-number">5. Delivery associates's App</h1>
+      <div class="project-detail">
+        <div class="project-data">
+          <img class="project-detail-img" src="./assets/img/gasgrab5.png" alt="">
+          <div class="project-modal">
+            <i class="fas fa-times project-modal-close"></i>
+            <img class="project-detail-full-img" src="./assets/img/gasgrab5.png" alt="">
+          </div>
+        </div>
+        <span class="project-detail-description">
+          - This app are used by delivery associates
+          to receive and deliver orders from customers.<br>
+          - The distributor will decide which order will be delivered by whom. <br>
+          - Delivery associates get a notification as soon as there's an order need them to deliver. <br>
+          - There are 5 stages in delivery procedure: Initial, ready-to deliver, delivering, complete, cancel.
+          Delivery associates have to write a reason in order to cancel the order. <br>
+          - Delivery associates's app gets users's location
+          by react-native-geocoding module and posts it to the server every 15 second. 
+          In the meantime, customers's app gets this location and displays it on tracking map.<br>
+
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="fas fa-arrow-up scrollup-icon"></i>
+  </a>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

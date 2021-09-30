@@ -30,28 +30,26 @@ const toggleSkills = (ref) => {
   }
 }
 
-/*==================== QUALIFICATION TABS ====================*/
-
-
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services-modal');
-const modalBtns = document.querySelectorAll('.services-button');
-const modalCloses = document.querySelectorAll('.services-modal-close');
+const projectImgs = document.querySelectorAll('.project-detail-img');
+const modalViews = document.querySelectorAll('.project-modal');
+const modalCloses = document.querySelectorAll('.project-modal-close');
 
 const openModal = (clickedModal) => {
-  modalViews[clickedModal].classList.add('services-modal-active')
+  projectImgs[clickedModal].classList.add('project-modal-active')
 }
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener('click', () => {
-    openModal(i)
+projectImgs.forEach((img, i) => {
+  img.addEventListener('click', () => {
+    console.log(img);
+    modalViews[i].classList.add('project-modal-active')
   })
 });
 
 modalCloses.forEach(modalClose => {
   modalClose.addEventListener('click', () => {
     modalViews.forEach(modalView => {
-      modalView.classList.remove('services-modal-active')
+      modalView.classList.remove('project-modal-active')
     })
   })
 })
@@ -70,9 +68,6 @@ let swiper = new Swiper(".portfolio-container", {
   },
 });
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -81,7 +76,7 @@ function scrollActive() {
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 150;
     sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
