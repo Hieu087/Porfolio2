@@ -546,17 +546,6 @@ button {
 }
 
 /*==================== QUALIFICATION ====================*/
-.qualification-tabs {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification-button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
 .qualification-icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
